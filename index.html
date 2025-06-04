@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartamentos Amoblados en Medellín - Reserva Fácil y Rápida</title>
+
     <meta name="description"
         content="Encuentra apartamentos amoblados en Medellín con ubicaciones privilegiadas. Perfectos para turismo, negocios o estadías largas. ¡Reserva ya!">
     <meta name="keywords"
         content="apartamentos amoblados, Medellín, turismo en Medellín, alojamiento en Medellín, apartamentos para alquiler, turismo en Colombia">
     <meta name="author" content="Nelson Muñoz Yepes">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://apartamentoamobladomedellin.com">
+
     <meta property="og:title" content="Apartamentos Amoblados en Medellín - Reserva Fácil y Rápida">
     <meta property="og:description"
         content="Disfruta de apartamentos amoblados en Medellín. Ubicaciones cerca de los principales sitios turísticos y con todas las comodidades.">
@@ -16,27 +21,68 @@
     <meta property="og:url" content="https://apartamentoamobladomedellin.com">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Apartamentos Amoblados en Medellín - Reserva Fácil y Rápida">
     <meta name="twitter:description"
         content="Apartamentos amoblados en Medellín con ubicaciones privilegiadas. Perfectos para turismo o negocios. ¡Contáctanos ahora!">
     <meta name="twitter:image" content="https://apartamentoamobladomedellin.com/assets/img/og-image.jpg">
 
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="bingbot" content="index, follow">
+    <link rel="icon" href="assets/img/ico.jpg" type="image/x-icon">
 
-    <title>Apartamentos Amoblados en Medellín - Reserva Fácil y Rápida</title>
-    <link rel="canonical" href="https://apartamentoamobladomedellin.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="assets/img/ico.jpg" type="image/x-icon">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .whatsapp-button:hover {
+            color: white;
+            background-color: #128C7E;
+        }
+
+        /* Nuevo estilo para los embeds de Airbnb */
+        .airbnb-embed-frame {
+            height: 350px;
+            /* Ajusta esta altura según lo que necesites para que no aparezcan scrollbars */
+            overflow: hidden;
+            /* Oculta cualquier contenido que se desborde */
+            display: flex;
+            /* Para centrar el iframe internamente si es necesario */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .airbnb-embed-frame iframe {
+            width: 100%;
+            height: 100%;
+            /* Asegura que el iframe use el 100% de la altura de su contenedor */
+            border: none;
+            /* Elimina cualquier borde por defecto del iframe */
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Hero Section -->
-    <!-- Hero Section -->
     <section class="hero d-flex justify-content-center align-items-center text-center">
         <div class="container">
             <h1>Apartamentos Amoblados en Medellín</h1>
@@ -45,16 +91,15 @@
         </div>
     </section>
 
-
-    <!-- Catálogo de apartamentos -->
     <section id="galeria" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Catálogo de apartamentos</h2>
+            <h2 class="text-center mb-4">Catálogo de Apartamentos</h2>
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card rounded-3 shadow-sm">
-                        <a href="https://suamoblado.com/apartamentos_itagui.html">
-                            <img src="assets/img/1.jpg" class="card-img-top" alt="Apartamento 1">
+                    <div class="card rounded-3 shadow-sm h-100">
+                        <a href="https://apartamentoamobladomedellin.com.co/?columna=id_municipio&orden=ASC#verCatalogo"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/1.jpg" class="card-img-top" alt="Apartamento en Itagüí">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Apartamentos en Itagüí</h5>
@@ -63,9 +108,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card rounded-3 shadow-sm">
-                        <a href="https://suamoblado.com/apartaestudios.html">
-                            <img src="assets/img/2.jpg" class="card-img-top" alt="Apartamento 2">
+                    <div class="card rounded-3 shadow-sm h-100">
+                        <a href="https://apartamentoamobladomedellin.com.co/index.php#verCatalogo" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/2.jpg" class="card-img-top" alt="Apartaestudio en Medellín">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Apartaestudios en Medellín</h5>
@@ -74,9 +120,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card rounded-3 shadow-sm">
-                        <a href="https://suamoblado.com/apartamentos_medellin.html">
-                            <img src="assets/img/3.jpeg" class="card-img-top" alt="Apartamento 3">
+                    <div class="card rounded-3 shadow-sm h-100">
+                        <a href="https://suamoblado.com/index.php#verCatalogo" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/img/3.jpeg" class="card-img-top" alt="Apartamento en Medellín">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Apartamentos en Medellín</h5>
@@ -88,105 +135,191 @@
         </div>
     </section>
 
-
-
-    <!-- Sección de Alquiler en Airbnb -->
-    <section id="airbnb" class="py-5 bg-light">
-        <div class="container-fluid">
-            <h2 class="text-center mb-3">Alquiler por Airbnb</h2>
-            <h3 class="text-center mb-4">Ver propiedades disponibles</h3>
-
-            <div class="row gy-4">
-                <!-- Propiedades en Airbnb -->
-                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame w-100" data-id="1332669682584605857" data-view="home"
-                        data-hide-price="true">
-                        <a href="https://es-l.airbnb.com/rooms/1332669682584605857">Ver en Airbnb</a>
-                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame w-100" data-id="1328356112737685059" data-view="home"
-                        data-hide-price="true">
-                        <a href="https://es-l.airbnb.com/rooms/1328356112737685059">Ver en Airbnb</a>
-                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame w-100" data-id="54038969" data-view="home" data-hide-price="true">
-                        <a href="https://es-l.airbnb.com/rooms/54038969">Ver en Airbnb</a>
-                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame w-100" data-id="36238088" data-view="home" data-hide-price="true">
-                        <a href="https://es-l.airbnb.com/rooms/36238088">Ver en Airbnb</a>
-                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame w-100" data-id="1135461478492075781" data-view="home"
-                        data-hide-price="true">
-                        <a href="https://es-l.airbnb.com/rooms/1135461478492075781">Ver en Airbnb</a>
-                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame w-100" data-id="1114492630502281786" data-view="home"
-                        data-hide-price="true">
-                        <a href="https://es-l.airbnb.com/rooms/1114492630502281786">Ver en Airbnb</a>
-                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame w-100" data-id="41236405" data-view="home" data-hide-price="true">
-                        <a href="https://es-l.airbnb.com/rooms/41236405">Ver en Airbnb</a>
-                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame w-100" data-id="1123137026657614906" data-view="home"
-                        data-hide-price="true">
-                        <a href="https://es-l.airbnb.com/rooms/1123137026657614906">Ver en Airbnb</a>
-                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame" data-id="1358664974142860963" data-view="home"
-                        data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a
-                            href="https://es-l.airbnb.com/rooms/1358664974142860963?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">Ver
-                            en Airbnb</a><a
-                            href="https://es-l.airbnb.com/rooms/1358664974142860963?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
-                            rel="nofollow">Vivienda rentada · Medellín · ★Novedad · 2 habitaciones · 2 camas · 1
-                            baño</a>
-                        <script async="" src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div>
-
-                <!-- Enlace para unirse a Airbnb -->
-                <div class="col-12 text-center mt-4">
-                    <a href="https://www.airbnb.mx/r/nelsonm4857?s=39&t=131c0j" class="btn btn-primary btn-lg">¡Únete a Airbnb!</a>
+    <section id="muebles" class="py-5" style="background-color: #c89423;">
+        <div class="container my-5">
+            <div class="row justify-content-center text-center p-4 rounded">
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <h1 class="mb-3" style="color: beige;">Muebles de ocasión</h1>
+                    <h3 class="mb-4">Disfruta de la posibilidad de amoblar tu casa de manera económica y elegante.
+                    </h3>
+                    <a href="https://suamoblado.com/fl_v2" class="btn btn-warning btn-lg" target="_blank"
+                        rel="noopener noreferrer">Venta de muebles y enseres</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- <section id="airbnb" class="py-5 bg-light">
+            <div class="container">
+                <h1 class="text-center mb-3">Alquiler por Airbnb</h1>
+                <h3 class="text-center mb-4">Ver propiedades disponibles</h3>
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                        <div class="airbnb-embed-frame w-100" data-id="1332669682584605857" data-view="home"
+                            data-hide-price="true">
+                            <a href="https://es-l.airbnb.com/rooms/1332669682584605857" target="_blank"
+                                rel="noopener noreferrer">Ver en Airbnb</a>
+                            <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                        <div class="airbnb-embed-frame w-100" data-id="1328356112737685059" data-view="home"
+                            data-hide-price="true">
+                            <a href="https://es-l.airbnb.com/rooms/1328356112737685059" target="_blank"
+                                rel="noopener noreferrer">Ver en Airbnb</a>
+                            <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                        <div class="airbnb-embed-frame w-100" data-id="54038969" data-view="home" data-hide-price="true">
+                            <a href="https://es-l.airbnb.com/rooms/54038969" target="_blank" rel="noopener noreferrer">Ver
+                                en Airbnb</a>
+                            <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                        <div class="airbnb-embed-frame w-100" data-id="36238088" data-view="home" data-hide-price="true">
+                            <a href="https://es-l.airbnb.com/rooms/36238088" target="_blank" rel="noopener noreferrer">Ver
+                                en Airbnb</a>
+                            <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                        <div class="airbnb-embed-frame w-100" data-id="1135461478492075781" data-view="home"
+                            data-hide-price="true">
+                            <a href="https://es-l.airbnb.com/rooms/1135461478492075781" target="_blank"
+                                rel="noopener noreferrer">Ver en Airbnb</a>
+                            <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                        <div class="airbnb-embed-frame w-100" data-id="1114492630502281786" data-view="home"
+                            data-hide-price="true">
+                            <a href="https://es-l.airbnb.com/rooms/1114492630502281786" target="_blank"
+                                rel="noopener noreferrer">Ver en Airbnb</a>
+                            <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                        <div class="airbnb-embed-frame w-100" data-id="41236405" data-view="home" data-hide-price="true">
+                            <a href="https://es-l.airbnb.com/rooms/41236405" target="_blank" rel="noopener noreferrer">Ver
+                                en Airbnb</a>
+                            <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                        <div class="airbnb-embed-frame w-100" data-id="1123137026657614906" data-view="home"
+                            data-hide-price="true">
+                            <a href="https://es-l.airbnb.com/rooms/1123137026657614906" target="_blank"
+                                rel="noopener noreferrer">Ver en Airbnb</a>
+                            <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                        <div class="airbnb-embed-frame w-100" data-id="1358664974142860963" data-view="home"
+                            data-hide-price="true">
+                            <a href="https://es-l.airbnb.com/rooms/1358664974142860963" target="_blank"
+                                rel="noopener noreferrer">Ver en Airbnb</a>
+                            <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                        </div>
+                    </div>
 
-    <!-- Sitios Turísticos Section -->
+                    <div class="col-12 text-center mt-4">
+                        <a href="https://www.airbnb.mx/r/nelsonm4857?s=39&t=131c0j" class="btn btn-primary btn-lg"
+                            target="_blank" rel="noopener noreferrer">¡Únete a Airbnb!</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    <section id="airbnb" class="py-5 bg-light">
+        <div class="container">
+            <h1 class="text-center mb-3">Alquiler por Airbnb</h1>
+            <h3 class="text-center mb-4">Ver propiedades disponibles</h3>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="airbnb-embed-frame w-100" data-id="1332669682584605857" data-view="home"
+                        data-hide-price="true">
+                        <a href="https://es-l.airbnb.com/rooms/1332669682584605857" target="_blank"
+                            rel="noopener noreferrer">Ver en Airbnb</a>
+                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="airbnb-embed-frame w-100" data-id="1328356112737685059" data-view="home"
+                        data-hide-price="true">
+                        <a href="https://es-l.airbnb.com/rooms/1328356112737685059" target="_blank"
+                            rel="noopener noreferrer">Ver en Airbnb</a>
+                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="airbnb-embed-frame w-100" data-id="54038969" data-view="home" data-hide-price="true">
+                        <a href="https://es-l.airbnb.com/rooms/54038969" target="_blank" rel="noopener noreferrer">Ver
+                            en Airbnb</a>
+                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="airbnb-embed-frame w-100" data-id="36238088" data-view="home" data-hide-price="true">
+                        <a href="https://es-l.airbnb.com/rooms/36238088" target="_blank" rel="noopener noreferrer">Ver
+                            en Airbnb</a>
+                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="airbnb-embed-frame w-100" data-id="1135461478492075781" data-view="home"
+                        data-hide-price="true">
+                        <a href="https://es-l.airbnb.com/rooms/1135461478492075781" target="_blank"
+                            rel="noopener noreferrer">Ver en Airbnb</a>
+                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="airbnb-embed-frame w-100" data-id="1114492630502281786" data-view="home"
+                        data-hide-price="true">
+                        <a href="https://es-l.airbnb.com/rooms/1114492630502281786" target="_blank"
+                            rel="noopener noreferrer">Ver en Airbnb</a>
+                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="airbnb-embed-frame w-100" data-id="41236405" data-view="home" data-hide-price="true">
+                        <a href="https://es-l.airbnb.com/rooms/41236405" target="_blank" rel="noopener noreferrer">Ver
+                            en Airbnb</a>
+                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="airbnb-embed-frame w-100" data-id="1123137026657614906" data-view="home"
+                        data-hide-price="true">
+                        <a href="https://es-l.airbnb.com/rooms/1123137026657614906" target="_blank"
+                            rel="noopener noreferrer">Ver en Airbnb</a>
+                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="airbnb-embed-frame w-100" data-id="1358664974142860963" data-view="home"
+                        data-hide-price="true">
+                        <a href="https://es-l.airbnb.com/rooms/1358664974142860963" target="_blank"
+                            rel="noopener noreferrer">Ver en Airbnb</a>
+                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                    <a href="https://www.airbnb.mx/r/nelsonm4857?s=39&t=131c0j" class="btn btn-primary btn-lg"
+                        target="_blank" rel="noopener noreferrer">¡Únete a Airbnb!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="sitios-turisticos" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Sitios Turísticos de Medellín</h2>
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card shadow-sm rounded-3">
+                    <div class="card shadow-sm rounded-3 h-100">
                         <img src="assets/img/pueblito.jpg" class="card-img-top" alt="Pueblito Paisa">
                         <div class="card-body">
                             <h5 class="card-title">Pueblito Paisa</h5>
@@ -196,7 +329,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card shadow-sm rounded-3">
+                    <div class="card shadow-sm rounded-3 h-100">
                         <img src="assets/img/parque.webp" class="card-img-top" alt="Parque Explora">
                         <div class="card-body">
                             <h5 class="card-title">Parque Explora</h5>
@@ -206,7 +339,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="card shadow-sm rounded-3">
+                    <div class="card shadow-sm rounded-3 h-100">
                         <img src="assets/img/plaza-botero.jpg" class="card-img-top" alt="Plaza Botero">
                         <div class="card-body">
                             <h5 class="card-title">Plaza Botero</h5>
@@ -219,14 +352,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-light py-4">
         <div class="container d-flex flex-column align-items-center text-center">
             <p class="mb-2">&copy; 2024 Apartamentos Amoblados en Medellín. Todos los derechos reservados.</p>
             <p class="mb-2">Diseñado con ❤️ por Nelson Muñoz Yepes</p>
             <p class="mb-2">Visitas:</p>
 
-            <!-- Statcounter Code -->
             <script type="text/javascript">
                 var sc_project = 11426747;
                 var sc_invisible = 0;
@@ -239,27 +370,22 @@
             </script>
             <noscript>
                 <div class="statcounter">
-                    <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
+                    <a title="Web Analytics" href="https://statcounter.com/" target="_blank" rel="noopener noreferrer">
                         <img class="statcounter" src="https://c.statcounter.com/11426747/0/0e6e5721/0/"
-                            alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade">
+                            alt="Web Analytics" referrerpolicy="no-referrer-when-downgrade">
                     </a>
                 </div>
             </noscript>
         </div>
     </footer>
 
-
-    <!-- WhatsApp Button -->
     <a href="https://api.whatsapp.com/send/?phone=573117450745&text=Hola%2C+estoy+interesado+en+los+apartamentos+amoblados+en+Medell%C3%ADn.&type=phone_number&app_absent=0"
-        class="whatsapp-button">
+        class="whatsapp-button" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.min.js"></script>
-
-
 
 </body>
 
