@@ -16,7 +16,7 @@
 
     <meta property="og:title" content="Apartamentos Amoblados en Medellín - Reserva Fácil y Rápida">
     <meta property="og:description"
-        content="Disfruta de apartamentos amoblados en Medellín. Ubicaciones cerca de los principales sitios turísticos y con todas las comodidades.">
+        content="Disfruta de apartamentos amoblados en Medellín. Ubicaciones cerca de los principales sitios turísticos and con todas las comodidades.">
     <meta property="og:image" content="https://apartamentoamobladomedellin.com/assets/img/og-image.jpg">
     <meta property="og:url" content="https://apartamentoamobladomedellin.com">
     <meta property="og:type" content="website">
@@ -59,14 +59,36 @@
             background-color: #128C7E;
         }
 
+        /* Estilo para el botón de ir arriba colocado sobre el de WhatsApp */
+        .scroll-top-button {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            background-color: #343a40;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .scroll-top-button:hover {
+            color: white;
+            background-color: #1a1e21;
+        }
+
         /* Nuevo estilo para los embeds de Airbnb */
         .airbnb-embed-frame {
             height: 350px;
-            /* Ajusta esta altura según lo que necesites para que no aparezcan scrollbars */
             overflow: hidden;
-            /* Oculta cualquier contenido que se desborde */
             display: flex;
-            /* Para centrar el iframe internamente si es necesario */
             justify-content: center;
             align-items: center;
         }
@@ -74,14 +96,12 @@
         .airbnb-embed-frame iframe {
             width: 100%;
             height: 100%;
-            /* Asegura que el iframe use el 100% de la altura de su contenedor */
             border: none;
-            /* Elimina cualquier borde por defecto del iframe */
         }
     </style>
 </head>
 
-<body>
+<body id="inicio"> <!-- ID agregado para apuntar el scroll al inicio -->
 
     <section class="hero d-flex justify-content-center align-items-center text-center">
         <div class="container">
@@ -207,14 +227,7 @@
                         <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="airbnb-embed-frame w-100" data-id="1123137026657614906" data-view="home"
-                        data-hide-price="true">
-                        <a href="https://es-l.airbnb.com/rooms/1123137026657614906" target="_blank"
-                            rel="noopener noreferrer">Ver en Airbnb</a>
-                        <script async src="https://www.airbnb.com.co/embeddable/airbnb_jssdk"></script>
-                    </div>
-                </div> -->
+
                 <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
                     <div class="airbnb-embed-frame w-100" data-id="1358664974142860963" data-view="home"
                         data-hide-price="true">
@@ -302,6 +315,11 @@
             </noscript>
         </div>
     </footer>
+
+    <!-- Botón de Ir Arriba (con la misma medida que el de WhatsApp, ubicado encima de este) -->
+    <a href="#inicio" class="scroll-top-button" title="Ir arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
 
     <a href="https://api.whatsapp.com/send/?phone=573117450745&text=Hola%2C+estoy+interesado+en+los+apartamentos+amoblados+en+Medell%C3%ADn.&type=phone_number&app_absent=0"
         class="whatsapp-button" target="_blank" rel="noopener noreferrer">
