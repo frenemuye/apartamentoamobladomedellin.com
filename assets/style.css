@@ -1,60 +1,134 @@
+/* ================================================
+   ApartamentoAmobladoMedellin.com — Design 2026
+   ================================================ */
+
+:root {
+  --c-primary:    #005F73;
+  --c-primary-lt: #0a8fa8;
+  --c-wa:         #25d366;
+  --c-wa-dk:      #128c7e;
+  --c-bg:         #f0f4f8;
+  --c-text:       #1e293b;
+  --c-muted:      #64748b;
+  --c-border:     rgba(0,0,0,.07);
+  --r-lg:         16px;
+  --sh-sm:        0 2px 10px rgba(0,0,0,.07);
+  --sh-md:        0 8px 28px rgba(0,0,0,.12);
+  --ease:         cubic-bezier(.4, 0, .2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
 body {
-        font-family: Arial, sans-serif;
-        padding: 0;
-        margin: 0px;
-    }
+  font-family: 'Segoe UI', Arial, 'Helvetica Neue', sans-serif;
+  padding: 0; margin: 0;
+  background: var(--c-bg); color: var(--c-text);
+  -webkit-font-smoothing: antialiased;
+}
 
-    .hero {
-        background-image: url('img/portada.jpg');
-        /* Cambiar por una imagen de fondo real */
-        background-size: cover;
-        background-position: center;
-        color: white;
-        text-align: center;
-        padding: 100px 20px;
-        text-shadow: 1px 4px 10px rgba(0,0,0,1);
-    }
+/* ── HERO ── */
+.hero {
+  position: relative;
+  background-image: url('img/portada.jpg');
+  background-size: cover; background-position: center;
+  color: white; text-align: center;
+  padding: 130px 20px; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(160deg, rgba(0,30,46,.78) 0%, rgba(0,95,115,.52) 100%);
+}
+.hero > .container { position: relative; }
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900;
+  margin: 0 0 14px; letter-spacing: -.5px;
+  text-shadow: 0 2px 16px rgba(0,0,0,.3);
+}
+.hero h3 {
+  font-size: clamp(.95rem, 2vw, 1.25rem); font-weight: 300;
+  opacity: .9; margin: 0 0 32px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.25);
+}
 
-    .card {
-        border: none;
-        transition: transform 0.3s;
-    }
+/* ── BOOTSTRAP OVERRIDES ── */
+.btn-primary {
+  background: linear-gradient(135deg, var(--c-primary), var(--c-primary-lt)) !important;
+  border: none !important; border-radius: 50px !important;
+  font-weight: 600 !important; padding: 12px 28px !important;
+  box-shadow: 0 4px 16px rgba(0,95,115,.3) !important;
+  transition: all .3s var(--ease) !important;
+}
+.btn-primary:hover, .btn-primary:focus {
+  filter: brightness(1.12) !important; transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0,95,115,.4) !important;
+}
+.btn-warning {
+  border-radius: 50px !important; font-weight: 700 !important;
+  padding: 12px 28px !important;
+  transition: all .3s var(--ease) !important;
+}
+.btn-warning:hover { transform: translateY(-2px) !important; }
 
-    .card:hover {
-        transform: scale(1.05);
-    }
+/* ── CARDS ── */
+.card {
+  border: none !important; border-radius: var(--r-lg) !important;
+  box-shadow: var(--sh-sm) !important; overflow: hidden;
+  background: #fff !important;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease) !important;
+}
+.card:hover { transform: translateY(-6px) !important; box-shadow: var(--sh-md) !important; }
+.card img { width: 100%; height: 220px; object-fit: cover; transition: transform .5s; }
+.card:hover img { transform: scale(1.04); }
+.card-title { color: var(--c-primary) !important; font-weight: 700 !important; }
 
-    .whatsapp-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #25D366;
-        color: white;
-        border-radius: 50%;
-        padding: 15px;
-        font-size: 24px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+/* ── AIRBNB SECTION ── */
+.airbnb-embed-frame {
+  height: 350px; overflow: hidden;
+  display: flex; justify-content: center; align-items: center;
+  border-radius: var(--r-lg); box-shadow: var(--sh-sm);
+  background: #fff;
+}
+.airbnb-embed-frame iframe { width: 100%; height: 100%; border: none; }
 
+/* ── SECTION TITLES ── */
+.section-label {
+  display: inline-block; font-size: .74rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .12em;
+  color: var(--c-primary); margin-bottom: 6px;
+}
 
+/* ── FOOTER ── */
+.bg-dark { background: linear-gradient(135deg, #0a111f, #172038) !important; }
+footer { font-size: .875rem; }
 
-    footer {
-        background-color: #f8f9fa;
-        padding: 20px 0;
-        text-align: center;
-        font-size: 14px;
-        color: #6c757d;
-    }
+/* ── FLOATING BUTTONS ── */
+.whatsapp-button {
+  position: fixed; bottom: 24px; right: 24px;
+  background: var(--c-wa); color: white;
+  border-radius: 50%; width: 54px; height: 54px;
+  display: flex; justify-content: center; align-items: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 20px rgba(37,211,102,.4);
+  z-index: 1000; text-decoration: none;
+  transition: all .3s var(--ease);
+}
+.whatsapp-button:hover {
+  color: white; background: var(--c-wa-dk);
+  transform: scale(1.1); box-shadow: 0 8px 28px rgba(37,211,102,.5);
+}
+.scroll-top-button {
+  position: fixed; bottom: 88px; right: 26px;
+  background: rgba(255,255,255,.92); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,0,0,.08); color: var(--c-primary);
+  border-radius: 50%; width: 42px; height: 42px;
+  display: flex; justify-content: center; align-items: center;
+  font-size: 1rem; box-shadow: var(--sh-sm); z-index: 1000;
+  text-decoration: none; transition: all .3s var(--ease);
+}
+.scroll-top-button:hover { background: var(--c-primary); color: #fff; transform: translateY(-2px); }
 
-    img{
-        width: 300px;
-        height: 250px;
-    }
+img { max-width: 100%; }
 
-    .hero h1, .hero h3{
-        text-shadow: -1px 3px 8px rgba(0, 0, 0, 1);
-    }
-   
+@media (max-width: 768px) { .hero { padding: 80px 16px; } }
